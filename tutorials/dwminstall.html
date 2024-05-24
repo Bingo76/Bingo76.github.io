@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Suckless DWM | Bingo76</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #ff9000;
+        }
+
+        header {
+            background-color: #333;
+            color: #ff9000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #ff9000;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #ff9000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover,
+        nav a:visited,
+        nav a:active {
+            color: #ff9000;
+        }
+
+        nav a.current {
+            color: white;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        article {
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        p {
+            color: #dbdbdb;
+        }
+
+        h2 {
+            color: #ff9000;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ff9000;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Install Suckless DWM</h1>
+        <p>The window manager that Sucks Less!</p>
+    </header>
+
+    <nav>
+        <a href="https://Bingo76.me/index.html">Home</a>
+        <a href="https://Bingo76.me/blog.html">Blog</a>
+        <a href="https://Bingo76.me/tutorials.html" class="current">Tutorials</a>
+        <a href="https://Bingo76.me/recipes.html">Recipes</a>
+        <a href="https://github.com/Bingo76">Projects</a>
+    </nav>
+
+    <section>
+        <article>
+            <h2>Step 1: Clone the Repository</h2>
+            <p>Clone the DWM repository from Suckless's GitHub:</p>
+            <pre><code>git clone https://git.suckless.org/dwm</code></pre>
+            <p>Optionally, if you prefer, use my config which is available on my github.</p>
+        </article>
+
+        <article>
+            <h2>Step 2: Navigate to the DWM Directory</h2>
+            <pre><code>cd dwm</code></pre>
+        </article>
+
+        <article>
+            <h2>Step 3: Compile and Install DWM</h2>
+            <p>Compile and install DWM by running:</p>
+            <pre><code>sudo make clean install</code></pre>
+            <p>You will need to run this command every time you modify DWM to apply your changes.</p>
+        </article>
+
+        <article>
+            <h2>Step 4: Set DWM as Your Default Window Manager</h2>
+            <p>Add the following line to the end of your .xinitrc or .xsession file:</p>
+            <pre><code>exec dwm</code></pre>
+        </article>
+
+        <article>
+            <h2>Step 5: Additional Configuration (Optional)</h2>
+            <p>Edit the config.h file in the DWM source directory to further customize DWM, my config is available on my github at:</p> <a href="https://github.com/Bingo76/dwm"></a>
+        </article>
+
+        <article>
+            <h2>Issues</h2>
+            <p>If you have any issues consult the Arch Linux wiki</p> <a href="https://wiki.archlinux.org/title/Dwm"></a> or the suckless website <a href="https://dwm.suckless.org/"></a> 
+        </article>
+      
+</body>
+</html>
 
