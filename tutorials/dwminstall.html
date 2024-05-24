@@ -74,6 +74,15 @@
             bottom: 0;
             width: 100%;
         }
+    article a.special-link {
+        color: #87cefa;
+    }
+
+    article a.special-link:hover,
+    article a.special-link:active {
+        color: #87cefa; 
+    }
+        
     </style>
 </head>
 <body>
@@ -93,9 +102,8 @@
     <section>
         <article>
             <h2>Step 1: Clone the Repository</h2>
-            <p>Clone the DWM repository from Suckless's GitHub:</p>
-            <pre><code>git clone https://git.suckless.org/dwm</code></pre>
-            <p>Optionally, if you prefer, use my config which is available on my github.</p>
+            <p>Clone the DWM repository from <a href="https://git.suckless.org/dwm" class="special-link">Suckless's GitHub</a>.</p>
+            <p>Optionally, if you prefer, use <a href="https://github.com/Bingo76/dwm" class="special-link">my config</a> which is available on my GitHub.</p>
         </article>
 
         <article>
@@ -112,21 +120,19 @@
 
         <article>
             <h2>Step 4: Set DWM as Your Default Window Manager</h2>
-            <p>Add the following line to the end of your .xinitrc or .xsession file:</p>
+            <p>Add the following line to the end of your <code>.xinitrc</code> or <code>.xsession</code> file:</p>
             <pre><code>exec dwm</code></pre>
         </article>
 
         <article>
             <h2>Step 5: Additional Configuration (Optional)</h2>
-            <p>Edit the config.h file in the DWM source directory to further customize DWM,</p><a href="https://github.com/Bingo76/dwm">my DWM Config</a><p>is available on my github at:</p> 
-            
+            <p>Edit the <code>config.h</code> file in the DWM source directory to further customize DWM. My <a href="https://github.com/Bingo76/dwm" class="special-link">DWM Config</a> is available on my GitHub.</p>
         </article>
 
         <article>
             <h2>Issues</h2>
-            <p>If you have any issues consult the</p><a href="https://wiki.archlinux.org/title/Dwm">Arch Linux Wiki</a><p>or the</p><a href="https://dwm.suckless.org/">Suckless Website</a><p>failing that, you can email me for advice although don't expect a response.</p> 
+            <p>If you have any issues consult the <a href="https://wiki.archlinux.org/title/Dwm" class="special-link">Arch Linux Wiki</a> or the <a href="https://dwm.suckless.org/" class="special-link">Suckless Website</a>. Failing that, you can email me for advice although don't expect a response.</p>
         </article>
-      
+    </section>
 </body>
 </html>
-
